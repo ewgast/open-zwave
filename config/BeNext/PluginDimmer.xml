@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--http://benext.eu/static/manual/plugindimmer.pdf-->
+<!--http://www.benext.eu/static/manual/plugindimmer.pdf-->
 <Product xmlns='http://code.google.com/p/open-zwave/'>
   <!-- Configuration -->
   <CommandClass id="112">
 
     <Value type="byte" genre="config" instance="1" index="1" label="Set to Default" value="-1">
       <Help>Set all configuration values to default values (factory settings).</Help>
-    </Value>
-
-    <Value type="list" genre="config" instance="1" index="3" label="Control Type" value="0" size="1">
-      <Help>The way the Built-in Dimmer reacts when light is turned on/off with button</Help>
-      <Item label="Switch own light on and send a Z-Wave message to all associated nodes (direct and extern)" value="0"/>
-      <Item label="Don.t switch own light on but only send a Z-Wave message to associated node. (extern only)" value="1"/>
     </Value>
 
     <Value type="byte" genre="config" instance="1" index="4" label="Dimming enabled" value="1">
